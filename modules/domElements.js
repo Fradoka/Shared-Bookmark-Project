@@ -9,5 +9,6 @@ export function getDomElements () {
         urlInput : document.getElementById("url-input"),
         titleInput : document.getElementById("title-input"),
         descriptionText : document.getElementById("description-textarea"),
+        submitBtn : document.getElementById("submit-btn"),
     }
 }

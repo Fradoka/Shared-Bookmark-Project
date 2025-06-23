@@ -2,7 +2,7 @@ import { getUserIds } from "../storage.js";
 import { getDomElements } from "./domElements.js";
 import { displayUserBookmarks } from "./userBookmarks.js";
 
-const { userDropdown } = getDomElements();
+const { userDropdown, submitBtn } = getDomElements();
 
 export function populateUserDropdown () {
     const userIds = getUserIds();
@@ -16,7 +16,10 @@ export function populateUserDropdown () {
 }
 
 export function userDropdownListener (){
+    submitBtn.disabled = !userDropdown.value;
+    
     userDropdown.addEventListener("change", function() {
+        submitBtn.disabled = !this.value;
         const user = this.value;
         displayUserBookmarks(user);
     })
