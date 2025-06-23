@@ -5,5 +5,9 @@ export function getDomElements () {
         bookmarksList : document.getElementById("bookmarks-list"),
         noBookmarksMsg : document.getElementById("no-bookmarks-msg"),
         ulBookmarks : document.getElementById("ul-bookmarks"),
+        addBookmarkForm : document.getElementById("add-bookmark-form"),
+        urlInput : document.getElementById("url-input"),
+        titleInput : document.getElementById("title-input"),
+        descriptionText : document.getElementById("description-textarea"),
     }
 }

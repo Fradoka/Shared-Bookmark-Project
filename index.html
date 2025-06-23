@@ -19,8 +19,17 @@
 
   <section id="new-bookmark-form">
     <h2>Add New Bookmark</h2>
-    <form>
-
+    <form id="add-bookmark-form">
+        <label for="url-input">URL: 
+            <input type="url" id="url-input" required>
+        </label><br><br>
+        <label for="title-input">Title:
+            <input type="text" id="title-input" required>
+        </label><br><br>
+        <label for="description-textarea">Description:
+            <textarea id="description-textarea" rows="4"></textarea>
+        </label><br><br>
+        <button type="submit">Add Bookmark</button><br><br>
     </form>
   </section>
   <hr>
