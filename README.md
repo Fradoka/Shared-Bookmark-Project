@@ -13,6 +13,9 @@ A clear message is shown if the selected user has no bookmarks.
 
 5. No CSS: The application deliberately avoids custom CSS, focusing purely on functional HTML structure and JavaScript logic.
 
+## Live Demo: 
+https://shared-bookmark-project.netlify.app/
+
 ## Testing
 To run the unit tests locally:
 
