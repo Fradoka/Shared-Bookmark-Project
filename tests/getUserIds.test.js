@@ -1,5 +1,7 @@
 import { getUserIds } from "../storage.js";
 
-test('returns correct user Ids', () => {
+describe("getUserIds", () => {
+  test('returns correct user Ids', () => {
     expect(getUserIds()).toEqual(["Alice", "Bob", "Charlie", "David", "Eve"]);
-})
+  })
+});
