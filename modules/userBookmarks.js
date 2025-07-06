@@ -1,9 +1,9 @@
 import { getData } from "../storage.js";
 import { getDomElements } from "./domElements.js";
 
-const { bookmarksList, noBookmarksMsg, ulBookmarks } = getDomElements();
-
 export function displayUserBookmarks (userId) {
+    const { bookmarksList, noBookmarksMsg, ulBookmarks } = getDomElements();
+
     const bookmarksData = getData(userId);
     
     if (!bookmarksData || bookmarksData.length === 0) {

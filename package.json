@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-  "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node_modules/jest/bin/jest.js"
   },
   "devDependencies": {
-    "jest": "^30.0.2"
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "babel-jest": "^30.0.4",
+    "jest": "^30.0.4",
+    "jest-environment-jsdom": "^30.0.4"
   }
 }
